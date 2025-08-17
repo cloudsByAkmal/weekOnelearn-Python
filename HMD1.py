@@ -5,7 +5,7 @@ p = float(input("Masukkan panjang: "))
 l = float(input("Masukkan lebar: "))
 
 luas = p * l
-keliling = 2 * (p *l)
+keliling = 2 * (p + l)
 
 print(f"Luas persegi dengan panjang {p}, dan lebar {l} = {luas}")
 print(f"Keliling persegi dengan panjang {p}, dan lebar {l} = {keliling}")
@@ -15,8 +15,8 @@ secInput = int(input("Masukkan detik: "))
 
 hour = secInput // 3600
 modSec = secInput % 3600
-minute = secInput // 60
-second = secInput % 60
+minute = modSec // 60
+second = modSec % 60
 
 print(f"{hour:02d}:{minute:02d}:{second:02d}")
 
@@ -33,9 +33,9 @@ bmi = round(bmi, 2)
 
 if bmi < 18.5 : 
     kategori = "Underweight"
-elif bmi > 18.5 and 24.9 :
+elif 18.5 <= bmi <= 24.9 :
     kategori = "Normal"
-elif bmi > 24.9 and bmi < 29.9:
+elif 24.9 <= bmi <= 29.9 :
     kategori = "Overweight"
 else :
     kategori = "Obese"

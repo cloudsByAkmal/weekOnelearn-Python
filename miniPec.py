@@ -17,7 +17,7 @@ elif nilaiAkhir >= 70 and nilaiAkhir < 85:
 elif nilaiAkhir >= 55 and nilaiAkhir < 70:
     grade = 'C'
 else :
-    grade = 'Tidak lulus'
+    grade = 'D'
 
 status = "LULUS" if grade in ("A","B","C") else "Tidak Lulus"
 
